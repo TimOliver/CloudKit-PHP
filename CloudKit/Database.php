@@ -97,6 +97,7 @@ class Database
 
         // Sign signature with private key
         if (openssl_sign($signature, $signed_signature, $pkeyid, "sha256WithRSAEncryption")) {
+
             // Set headers
             curl_setopt(
                 $ch,

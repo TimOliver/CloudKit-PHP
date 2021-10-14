@@ -25,6 +25,10 @@ class Response
 
     public function hasErrors(): bool
     {
+        if ($this->errors == null) {
+            return false;
+        }
+
         return count($this->errors) > 0;
     }
 
