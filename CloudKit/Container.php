@@ -55,7 +55,7 @@ class Container
 
     public function getPublicCloudDatabase(): Database
     {
-        if ($this->publicCloudDatabase) {
+        if (!isset($this->publicCloudDatabase)) {
             $this->publicCloudDatabase = new Database($this, 'public');
         }
         return $this->publicCloudDatabase;
