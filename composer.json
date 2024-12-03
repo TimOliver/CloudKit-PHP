@@ -1,0 +1,27 @@
+{
+    "name": "timoliver/cloudkit-php",
+    "description": "API client for server-to-server communication with Apple CloudKit.",
+    "type": "library",
+    "keywords": ["cloudkit", "api", "client", "apple"],
+    "homepage": "http://github.com/timoliver/cloudkit-php",
+    "time": "2021-10-30",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Malcolm Hall",
+            "homepage": "https://www.malcolmhall.com/"
+        },
+        {
+            "name": "Tim Oliver",
+            "homepage": "https://tim.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CloudKit\\": "CloudKit/"
+        }
+    }
+}
